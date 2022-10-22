@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Calculadora</title>
+		
+</head>
+<body>
+	<div class="contenedor">
+		<h1>Calculadora En TypeScript</h1>
+
+		<input class="resuno" type="text" name="respuesta" id="respuesta" [(ngModel)]="respuesta">
+		<input class="resuno" type="text" name="guardar" id="guardar" [(ngModel)]="guardar"style="display:none;">
+		
+		<table class="Calculadora">
+									
+			<tr>
+		     <td><input class="trans" type="button" value="%"  (click)="porce()"   ></td>
+		     <td><input class="trans" type="button" value="C" (click)="limp1()"    ></td>
+		     <td><input class="trans" type="button" value="÷"  (click)="dividir()" ></td>
+		     <td><input class="trans" type="button" value="⌫" (click)="limp2()"   ></td>
+	        </tr>
+
+		    <tr>
+			 <td><input class="trans"type="button" value="7" (click)="siete('')" ></td>
+			 <td><input class="trans"type="button" value="8" (click)="ocho('')"  ></td>
+			 <td><input class="trans"type="button" value="9" (click)="nueve('')" ></td>
+		     <td><input class="trans"type="button" value="X" (click)="mult()"  ></td>
+	        </tr>
+
+		    <tr>
+			  <td><input class="trans" type="button" value="4" (click)="cuatro('')" ></td>
+			  <td><input class="trans" type="button" value="5" (click)="cinco ('')" ></td>
+			 <td><input class="trans" type="button" value="6"  (click)="seis  ('')" ></td>
+			 <td><input class="trans" type="button" value="-"  (click)="resta ()"   ></td>
+		    </tr>
+		
+		    <tr>
+		 	<td><input class="trans"type="button" value="1" (click)="uno ('')" ></td>
+			<td><input class="trans"type="button" value="2" (click)="dos ('')" ></td>
+			<td><input class="trans"type="button" value="3" (click)="tres('')" ></td>
+			<td><input class="trans"type="button" value="+" (click)="suma()"   ></td>
+	        </tr>
+
+		    <tr>
+			<td><input class="trans"type="button" value="+/-" (click)="ms   ()" ></td>
+			<td><input class="trans"type="button" value="0"   (click)="cero ('')" ></td>
+			<td><input class="trans"type="button" value=","   (click)="coma ('')"  ></td>
+			<td><input class="trans"type="button" value="="   (click)="igual()" ></td>
+	        </tr>
+
+	    </table>
+    </div>
+</body>
+</html>
